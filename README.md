@@ -18,7 +18,7 @@ The `TwoFactorAuth` smart contract provides functionalities for user registratio
 
 1. **Clone the repository**:
     ```bash
-    git clone [<repository-url>](https://https://github.com/wali-hu/Blockcahin-Based-Two-Factor-Authentication)
+    git clone (https://https://github.com/wali-hu/Blockcahin-Based-Two-Factor-Authentication)
     cd Blockcahin-Based-Two-Factor-Authentication
     ```
 
