@@ -1,66 +1,55 @@
-## Foundry
+# TwoFactorAuth Smart Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This project implements a blockchain-based Two-Factor Authentication (2FA) system using a smart contract deployed on the Ethereum blockchain. It enhances user authentication security by combining blockchain technology with One-Time Passwords (OTPs).
 
-Foundry consists of:
+## Overview
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+The `TwoFactorAuth` smart contract provides functionalities for user registration, OTP generation, and user authentication. It leverages custom error handling to manage various error states effectively.
 
-## Documentation
 
-https://book.getfoundry.sh/
 
-## Usage
+### Usage
 
-### Build
+1. **Deploy the Contract**: Run the deployment script to deploy the contract to your desired network.
+2. **Interact with the Contract**: Use the JavaScript interaction script to register users, generate OTPs, and authenticate users.
 
-```shell
-$ forge build
-```
 
-### Test
+## Installation and Setup
 
-```shell
-$ forge test
-```
+1. **Clone the repository**:
+    ```bash
+    git clone [<repository-url>](https://https://github.com/wali-hu/Blockcahin-Based-Two-Factor-Authentication)
+    cd Blockcahin-Based-Two-Factor-Authentication
+    ```
 
-### Format
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-```shell
-$ forge fmt
-```
+3. **Compile the smart contract**:
+    ```bash
+    forge build
+    ```
 
-### Gas Snapshots
+4. **Deploy And Test the contract**:
+    ```bash
+    forge script DeployTwoFactorAuth.s.sol
+    ```
+    ```bash
+    forge test
+    ```
 
-```shell
-$ forge snapshot
-```
+5. **Run the interaction script**:
+    ```bash
+    node interact.js
+    ```
 
-### Anvil
+## License
 
-```shell
-$ anvil
-```
+This project is licensed under the MIT License.
 
-### Deploy
+## Acknowledgements
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- **Forge**: For smart contract development and testing.
+- **Ethers.js**: For interacting with Ethereum from JavaScript.
